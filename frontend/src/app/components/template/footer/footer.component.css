@@ -1,0 +1,10 @@
+#rodape{
+    border:1px solid red;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.titulo-rodape{
+    text-align: right;
+}
