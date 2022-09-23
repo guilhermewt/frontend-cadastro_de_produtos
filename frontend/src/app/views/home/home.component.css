@@ -1,0 +1,18 @@
+.capa{
+    border: 1px solid red;
+    height: 100vh;
+    display: table;
+}
+
+.texto-capa{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+h1{
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: -0.05em;
+}
+
