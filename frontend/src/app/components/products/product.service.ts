@@ -1,13 +1,22 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Product } from './product-model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
 
-  constructor() { }
+  baseUrl = "http://localhost:3001/products"
+
+  constructor(private http:HttpClient) { }
 
   showOnConsole(msg:string):void{
     console.log(msg);
+  }
+
+  create(product:Product): Observable<Product>{
+    return this.http.post<Product>(this.baseUrl,product)
   }
 }
