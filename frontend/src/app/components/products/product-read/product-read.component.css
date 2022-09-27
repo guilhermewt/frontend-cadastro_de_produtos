@@ -1,0 +1,11 @@
+.product-read{
+    height: 100vh;
+    border:1px solid blue;
+    padding: 10px;
+}
+
+.icons{
+    width: 50px;
+    font-size:20;
+    text-align: center;
+}

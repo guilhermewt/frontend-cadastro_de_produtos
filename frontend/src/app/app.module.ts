@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductCreateComponent } from './components/products/product-create/product-create.component';
+import { ProductReadComponent } from './components/products/product-read/product-read.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ProductCreateComponent } from './components/products/product-create/pro
     FooterComponent,
     HomeComponent,
     ProductCrudComponent,
-    ProductCreateComponent
+    ProductCreateComponent,
+    ProductReadComponent
   ],
   imports: [
     BrowserModule,
