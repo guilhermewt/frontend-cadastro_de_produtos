@@ -1,5 +1,9 @@
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import localePt from '@angular/common/locales/pt';
+import {registerLocaleData} from '@angular/common';
+
+registerLocaleData(localePt);
 
 
 import { AppComponent } from './app.component';
@@ -14,6 +18,7 @@ import { FormsModule } from '@angular/forms';
 import { ProductCrudComponent } from './views/product-crud/product-crud.component';
 import { ProductCreateComponent } from './components/products/product-create/product-create.component';
 import { ProductReadComponent } from './components/products/product-read/product-read.component';
+import { ProductUpdateComponent } from './components/products/product-update/product-update.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,8 @@ import { ProductReadComponent } from './components/products/product-read/product
     HomeComponent,
     ProductCrudComponent,
     ProductCreateComponent,
-    ProductReadComponent
+    ProductReadComponent,
+    ProductUpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,10 @@ import { ProductReadComponent } from './components/products/product-read/product
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{
+    provide: LOCALE_ID,
+    useValue: 'pt-BR'
+  } ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

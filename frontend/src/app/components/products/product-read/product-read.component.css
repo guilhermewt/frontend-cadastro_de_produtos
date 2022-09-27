@@ -9,3 +9,11 @@
     font-size:20;
     text-align: center;
 }
+
+.edit > a{
+    color:yellow
+}
+
+.remove > a{
+    color:red
+}
