@@ -19,6 +19,7 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { ProductCreateComponent } from './components/products/product-create/product-create.component';
 import { ProductReadComponent } from './components/products/product-read/product-read.component';
 import { ProductUpdateComponent } from './components/products/product-update/product-update.component';
+import { ProductDeleteComponent } from './components/products/product-delete/product-delete.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ProductUpdateComponent } from './components/products/product-update/pro
     ProductCrudComponent,
     ProductCreateComponent,
     ProductReadComponent,
-    ProductUpdateComponent
+    ProductUpdateComponent,
+    ProductDeleteComponent
   ],
   imports: [
     BrowserModule,

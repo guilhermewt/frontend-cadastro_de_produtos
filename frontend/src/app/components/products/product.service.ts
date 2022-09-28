@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable,catchError,EMPTY} from 'rxjs';
+import { map } from 'rxjs';
 import { Product } from './product-model';
 
 @Injectable({
@@ -17,11 +18,17 @@ export class ProductService {
   }
 
   create(product:Product): Observable<Product>{
-    return this.http.post<Product>(this.baseUrl,product)
+    return this.http.post<Product>(this.baseUrl,product).pipe(
+      map(obj => obj),
+      catchError(e => this.errorHandler(e))
+    )
   }
 
   read(): Observable<Product[]>{
-    return this.http.get<Product[]>(this.baseUrl);
+    return this.http.get<Product[]>(this.baseUrl).pipe(
+      map(obj => obj),
+      catchError(e => this.errorHandler(e))
+    );
   }
 
   readById(id:string): Observable<Product>{
@@ -32,5 +39,16 @@ export class ProductService {
   update(product:Product): Observable<Product>{
     const url = `${this.baseUrl}/${product.id}`;
     return this.http.put<Product>(url,product);
+  }
+
+  delete(id:string): Observable<Product>{
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.delete<Product>(url);
+  }
+
+  errorHandler(msg:any): Observable<any>{
+    console.log(msg)
+    this.showOnConsole('ocorreu um erro')
+    return EMPTY
   }
 }
