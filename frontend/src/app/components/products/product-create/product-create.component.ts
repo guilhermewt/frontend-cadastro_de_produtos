@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HeaderData } from '../../template/header/header-data.model';
+import { HeaderService } from '../../template/header/header.service';
 import { Product } from '../product-model';
 import { ProductService } from '../product.service';
 
@@ -15,7 +17,13 @@ export class ProductCreateComponent implements OnInit {
     price: null
   }
 
-  constructor(private productService:ProductService,private router:Router) { }
+  constructor(private productService:ProductService,private router:Router,private headerService:HeaderService) {
+    headerService.headerData = {
+      title:'cadastrar produtos',
+      icon:'glyphicon-plus',
+      routerUrl:'product-create'
+    }
+   }
 
   ngOnInit(): void {
   }

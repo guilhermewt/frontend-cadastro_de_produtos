@@ -1,3 +1,28 @@
 nav{
     margin-bottom: 0px;
 }
+
+.header{
+    display: flex;
+    align-items: center;
+}
+
+.header a {
+    align-items: center;
+    text-decoration: none;
+}
+
+.header a span{
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+
+/* .title > i{
+    font-size: 12px;
+    padding-right: 5px;
+    padding: 0px;
+    margin: 0px;
+
+    border: 1px solid red;
+} */

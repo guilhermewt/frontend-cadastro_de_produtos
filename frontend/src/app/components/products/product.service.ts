@@ -33,17 +33,26 @@ export class ProductService {
 
   readById(id:string): Observable<Product>{
     const url = `${this.baseUrl}/${id}`;
-    return this.http.get<Product>(url);
+    return this.http.get<Product>(url).pipe(
+      map(obj => obj),
+      catchError(e => this.errorHandler(e))
+    );
   }
 
   update(product:Product): Observable<Product>{
     const url = `${this.baseUrl}/${product.id}`;
-    return this.http.put<Product>(url,product);
+    return this.http.put<Product>(url,product).pipe(
+      map(obj => obj),
+      catchError(e => this.errorHandler(e))
+    );
   }
 
   delete(id:string): Observable<Product>{
-    const url = `${this.baseUrl}/${id}`;
-    return this.http.delete<Product>(url);
+    const url = `${this.baseUrl}/${id}/${this.baseUrl}`;
+    return this.http.delete<Product>(url).pipe(
+      map(obj => obj),
+      catchError(e => this.errorHandler(e))
+    );
   }
 
   errorHandler(msg:any): Observable<any>{
