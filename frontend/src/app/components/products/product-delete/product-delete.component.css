@@ -5,3 +5,8 @@
 button{
     margin: 10px 10px 10px 0px;
 }
+
+.form-control[readonly] {
+    background-color: rgba(0, 0, 0, 0.6);
+    color:#fff;
+}

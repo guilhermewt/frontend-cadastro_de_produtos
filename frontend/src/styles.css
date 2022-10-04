@@ -5,3 +5,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .v-middle{
     vertical-align: middle;
 }
+
+body{
+    background: url('assets/mountains.jpg');
+    color:#fff;
+    background-attachment: fixed;
+    background-color: #fff;
+}
+
+.input-transparent{
+    background-color: rgba(0, 0, 0, 0.6);
+    color:#fff;
+}

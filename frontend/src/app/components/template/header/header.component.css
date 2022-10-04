@@ -2,6 +2,19 @@ nav{
     margin-bottom: 0px;
 }
 
+nav.navbar-transparente{
+	background: rgba(0,0,0,0.3); /*transparencia*/
+	border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+
 .header{
     display: flex;
     align-items: center;

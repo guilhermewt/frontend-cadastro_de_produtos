@@ -1,6 +1,5 @@
 .product-read{
     height: 100vh;
-    border:1px solid blue;
     padding: 10px;
 }
 
@@ -21,6 +20,10 @@
 
 .remove > a{
     color:red
+}
+
+table{
+    background-color: rgba(0,0,0, 0.7);
 }
 
 h1{
