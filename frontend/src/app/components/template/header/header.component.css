@@ -15,11 +15,6 @@ nav.navbar-transparente{
     color: #fff;
 }
 
-.header{
-    display: flex;
-    align-items: center;
-}
-
 .header a {
     align-items: center;
     text-decoration: none;
