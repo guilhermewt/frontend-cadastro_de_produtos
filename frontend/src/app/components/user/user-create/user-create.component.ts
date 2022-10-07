@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Usuario } from '../user-model';
-import { UsersService } from '../Usuario.service';
+import { UsuarioDomain } from '../user-model';
+import { UsersService } from '../Users.service';
 
 @Component({
   selector: 'app-user-create',
@@ -10,7 +10,7 @@ import { UsersService } from '../Usuario.service';
 })
 export class UserCreateComponent implements OnInit {
   
-  usuario:Usuario = {
+  usuario:UsuarioDomain = {
     name:'',
     email:'',
     phone:null

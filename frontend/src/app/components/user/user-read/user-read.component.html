@@ -1,0 +1,29 @@
+<div class="container user-read">
+    <div class="row">
+            <div class="page-header">
+                <h1>lista de user</h1>
+            </div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>nome</th>
+                        <th>email</th>
+                        <th>telefone</th>
+                    </tr>    
+                </thead>
+
+                <tbody>
+                    <tr *ngFor="let usuarioDomain of usuarioDomain">
+                        <td>{{usuarioDomain.id}}</td>
+                        <td>{{usuarioDomain.name}}</td>
+                        <td>{{usuarioDomain.email}}</td>
+                        <td>{{usuarioDomain.phone}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        
+    </div>
+
+</div>
+

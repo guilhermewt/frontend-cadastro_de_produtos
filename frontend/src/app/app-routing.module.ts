@@ -8,6 +8,7 @@ import { ProductUpdateComponent } from './components/products/product-update/pro
 import { ProductDeleteComponent } from './components/products/product-delete/product-delete.component';
 import { UserCrudComponent } from './views/user-crud/user-crud.component';
 import { UserCreateComponent } from './components/user/user-create/user-create.component';
+import { UserReadComponent } from './components/user/user-read/user-read.component';
 
 const routes:Routes = [
   {
@@ -37,6 +38,10 @@ const routes:Routes = [
   {
     path:'user-create',
     component:UserCreateComponent
+  },
+  {
+    path:'user-read',
+    component:UserReadComponent
   }
 ];
 

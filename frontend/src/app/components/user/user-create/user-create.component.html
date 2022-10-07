@@ -8,17 +8,17 @@
             <form>
                 <div class="form-group">
                     <label for="name">name</label>
-                    <input type="text" class="form-control" [(ngModel)]="usuario.name" name="name" placeholder="name">    
+                    <input type="text" class="form-control input-transparent" [(ngModel)]="usuario.name" name="name" placeholder="name">    
                 </div>
 
                 <div class="form-group">
                     <label for="email">email</label>
-                    <input type="text" class="form-control" [(ngModel)]="usuario.email" name="email" placeholder="email@gmail.com">    
+                    <input type="text" class="form-control input-transparent" [(ngModel)]="usuario.email" name="email" placeholder="email@gmail.com">    
                 </div>
 
                 <div class="form-group">
                     <label for="telefone">telefone</label>
-                    <input type="number" class="form-control" [(ngModel)]="usuario.phone" name="name" placeholder="telefone">    
+                    <input type="number" class="form-control input-transparent" [(ngModel)]="usuario.phone" name="name" placeholder="telefone">    
                 </div>
 
                 <button type="submit" (click)="create()" class="btn btn-primary">save</button>

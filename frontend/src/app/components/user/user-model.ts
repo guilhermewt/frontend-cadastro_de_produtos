@@ -1,4 +1,4 @@
-export interface Usuario{
+export interface UsuarioDomain{
     id?:any
     name:string
     email:string
