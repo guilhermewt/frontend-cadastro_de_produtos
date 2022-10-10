@@ -10,6 +10,8 @@
                         <th>nome</th>
                         <th>email</th>
                         <th>telefone</th>
+                        <th>editar</th>
+                        <th>remove</th>
                     </tr>    
                 </thead>
 
@@ -19,6 +21,15 @@
                         <td>{{usuarioDomain.name}}</td>
                         <td>{{usuarioDomain.email}}</td>
                         <td>{{usuarioDomain.phone}}</td>
+                        <td class="coluna-acoes">
+                            <a routerLink="/user-update/{{usuarioDomain.id}}" class="glyphicon glyphicon-pencil yellow">   
+                            </a>
+                        </td>
+
+                        <td class="coluna-acoes">
+                            <a href="#" class="glyphicon glyphicon-trash red">
+                            </a>
+                        </td>
                     </tr>
                 </tbody>
             </table>

@@ -26,6 +26,11 @@ export class UsersService {
 
   readById(id:string):Observable<UsuarioDomain>{
     const url = `${this.baseUrl}/${id}`;
-    return this.http.get<UsuarioDomain>(this.baseUrl);
+    return this.http.get<UsuarioDomain>(url);
+  }
+
+  update(usuarioDomain:UsuarioDomain): Observable<UsuarioDomain>{
+    const url = `${this.baseUrl}/${usuarioDomain.id}`;
+    return this.http.put<UsuarioDomain>(url,usuarioDomain)
   }
 }

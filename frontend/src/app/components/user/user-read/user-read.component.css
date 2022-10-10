@@ -5,3 +5,20 @@ table{
 .page-header{
     margin-top: 0px;
 }
+
+.coluna-acoes{
+    text-align: center;
+    width: 20px;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.coluna-acoes > a:hover{
+    color:white;
+}
+
+.red{
+    color:red;
+}
