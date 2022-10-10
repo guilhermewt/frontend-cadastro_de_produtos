@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { HeaderService } from '../../template/header/header.service';
 import { UsuarioDomain } from '../user-model';
 import { UsersService } from '../Users.service';
 
@@ -15,7 +16,13 @@ export class UserCreateComponent implements OnInit {
     email:'',
     phone:null
   }
-  constructor(private router:Router,private usersService:UsersService) { }
+  constructor(private router:Router,private usersService:UsersService, private headerService:HeaderService) {
+    headerService.headerData = {
+      title:'new users',
+      icon:'glyphicon-user',
+      routerUrl:'user-create'
+    }
+   }
 
   ngOnInit(): void {
   }

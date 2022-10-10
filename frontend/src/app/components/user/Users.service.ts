@@ -33,4 +33,9 @@ export class UsersService {
     const url = `${this.baseUrl}/${usuarioDomain.id}`;
     return this.http.put<UsuarioDomain>(url,usuarioDomain)
   }
+
+  delete(usuarioDomain:UsuarioDomain):Observable<UsuarioDomain>{
+    const url = `${this.baseUrl}/${usuarioDomain.id}`;
+    return this.http.delete<UsuarioDomain>(url);
+  }
 }

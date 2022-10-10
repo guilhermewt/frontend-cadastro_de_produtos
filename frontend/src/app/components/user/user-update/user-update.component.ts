@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { HeaderService } from '../../template/header/header.service';
 import { UsuarioDomain } from '../user-model';
 import { UsersService } from '../Users.service';
 
@@ -11,7 +12,13 @@ import { UsersService } from '../Users.service';
 export class UserUpdateComponent implements OnInit {
 
   usuarioDomain!:UsuarioDomain
-  constructor(private userService:UsersService,private router:Router,private route:ActivatedRoute) { }
+  constructor(private userService:UsersService,private router:Router,private route:ActivatedRoute, private headerService:HeaderService) { 
+    headerService.headerData = {
+      title:'update user',
+      icon:'glyphicon-pencil',
+      routerUrl:'user-update'
+    }
+  }
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')

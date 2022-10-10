@@ -1,0 +1,17 @@
+.form-user{
+    height: 100vh;
+    padding: 0px;
+}
+
+.page-header{
+    margin-left: 15px;
+}
+
+button{
+    margin:0px 10px 0px 0px;
+}
+
+.form-control[readonly] {
+    background-color: rgba(0, 0, 0, 0.6);
+    color:#fff;
+}

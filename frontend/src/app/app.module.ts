@@ -24,6 +24,7 @@ import { UserCrudComponent } from './views/user-crud/user-crud.component';
 import { UserCreateComponent } from './components/user/user-create/user-create.component';
 import { UserReadComponent } from './components/user/user-read/user-read.component';
 import { UserUpdateComponent } from './components/user/user-update/user-update.component';
+import { UserDeleteComponent } from './components/user/user-delete/user-delete.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { UserUpdateComponent } from './components/user/user-update/user-update.c
     UserCrudComponent,
     UserCreateComponent,
     UserReadComponent,
-    UserUpdateComponent
+    UserUpdateComponent,
+    UserDeleteComponent
   ],
   imports: [
     BrowserModule,
