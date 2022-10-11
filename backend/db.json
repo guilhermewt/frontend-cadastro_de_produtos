@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "caneta BIC branca",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Notebook Mac Pro",
+      "price": 12000.89
+    },
+    {
+      "name": "monitor HQ",
+      "price": 419,
+      "id": 3
+    },
+    {
+      "name": "caixa de som",
+      "price": 69.99,
+      "id": 4
+    },
+    {
+      "name": "mouse",
+      "price": 49.5,
+      "id": 5
+    },
+    {
+      "name": "teclado mecanico",
+      "price": 150,
+      "id": 6
+    },
+    {
+      "name": "fone de ouvido",
+      "price": 45,
+      "id": 7
+    },
+    {
+      "name": "PC Game Mancer",
+      "price": 4050,
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "rute lima silva",
+      "email": "gabriel@gmail.com",
+      "phone": 33929873
+    },
+    {
+      "name": "welliston",
+      "email": "welliston10@gmail.com",
+      "phone": null,
+      "id": 2
+    }
+  ]
+}
