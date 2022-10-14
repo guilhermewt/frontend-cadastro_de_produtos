@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { ToastrService } from 'ngx-toastr';
 import { Observable,catchError,EMPTY} from 'rxjs';
 import { map } from 'rxjs';
 import { Product } from './product-model';
@@ -11,10 +12,14 @@ export class ProductService {
 
   baseUrl = "http://localhost:3001/products"
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient, private toast:ToastrService) { }
 
   showOnConsole(msg:string):void{
     console.log(msg);
+  }
+
+  exibirMensagem(mensagem:string,titulo:string,tipo:string){
+    this.toast.show(mensagem,titulo,{closeButton:true,progressBar:true},tipo)
   }
 
   create(product:Product): Observable<Product>{
@@ -55,9 +60,9 @@ export class ProductService {
     );
   }
 
-  errorHandler(msg:any): Observable<any>{
-    console.log(msg)
-    this.showOnConsole('ocorreu um erro')
+  errorHandler(e:any): Observable<any>{
+    this.exibirMensagem('ocorreu um error na operacao','error!','toast-error')
     return EMPTY
   }
+  
 }

@@ -22,14 +22,14 @@ export class UserUpdateComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id')
-    this.userService.readById(id!).subscribe(usuarioDomainFromBack => {
-      this.usuarioDomain = usuarioDomainFromBack;
+    this.userService.readById(id!).subscribe(usuarioDomainFromBackend => {
+      this.usuarioDomain = usuarioDomainFromBackend;
     })
   }
 
   update(){
     this.userService.update(this.usuarioDomain).subscribe(() => {
-      this.userService.showOnConsole('usuario atualizado')
+      this.userService.exibirMensagem('successful','usuario atualizado!','toast-success')
       this.router.navigate(['/users'])
     })
   }

@@ -29,7 +29,7 @@ export class UserDeleteComponent implements OnInit {
 
   delete(){
     this.usersService.delete(this.usuarioDomain).subscribe(() => {
-      this.usersService.showOnConsole('produto excluido com sucesso!')
+      this.usersService.exibirMensagem('successful','user excluido com sucesso!','toast-success')
       this.router.navigate(['/users'])
     })
   }

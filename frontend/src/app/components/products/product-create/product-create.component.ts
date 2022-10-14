@@ -30,7 +30,7 @@ export class ProductCreateComponent implements OnInit {
 
   create():void{
     this.productService.create(this.product).subscribe(() => {
-      this.productService.showOnConsole('produto criado!')
+      this.productService.exibirMensagem('produto criado!','successful operation','toast-success')
       this.router.navigate(['/products'])
     })
   }

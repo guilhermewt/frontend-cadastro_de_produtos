@@ -19,29 +19,41 @@ export class UsersService {
   }
 
   create(usuario:UsuarioDomain):Observable<UsuarioDomain>{
-    return this.http.post<UsuarioDomain>(this.baseUrl,usuario);
+    return this.http.post<UsuarioDomain>(this.baseUrl,usuario).pipe(
+      map(retorno => retorno),
+      catchError(error => this.errorHandler(error))
+    );
   }
 
   read():Observable<UsuarioDomain[]>{
     return this.http.get<UsuarioDomain[]>(this.baseUrl).pipe(
       map(retorno => retorno),
-      catchError(error => this.exibiError(error))
+      catchError(error => this.errorHandler(error))
     )
   }
 
   readById(id:string):Observable<UsuarioDomain>{
     const url = `${this.baseUrl}/${id}`;
-    return this.http.get<UsuarioDomain>(url);
+    return this.http.get<UsuarioDomain>(url).pipe(
+      map(retorno => retorno),
+      catchError(error => this.errorHandler(error))
+    );
   }
 
   update(usuarioDomain:UsuarioDomain): Observable<UsuarioDomain>{
     const url = `${this.baseUrl}/${usuarioDomain.id}`;
-    return this.http.put<UsuarioDomain>(url,usuarioDomain)
+    return this.http.put<UsuarioDomain>(url,usuarioDomain).pipe(
+      map(retorno => retorno),
+      catchError(error => this.errorHandler(error))
+    )
   }
 
   delete(usuarioDomain:UsuarioDomain):Observable<UsuarioDomain>{
     const url = `${this.baseUrl}/${usuarioDomain.id}`;
-    return this.http.delete<UsuarioDomain>(url);
+    return this.http.delete<UsuarioDomain>(url).pipe(
+      map(retorno => retorno),
+      catchError(error => this.errorHandler(error))
+    );
   }
  //closebut..botao fechar
   exibirMensagem(titulo:string,mensagem:string,tipo:string){
@@ -49,8 +61,8 @@ export class UsersService {
     
   }
 
-  exibiError(e:any): Observable<any>{
+  errorHandler(e:any): Observable<any>{
     this.exibirMensagem('Error!', 'nao foi possivel realizar a operacao', 'toast-error')
-    return EMPTY
+    return EMPTY;
   }
 }
