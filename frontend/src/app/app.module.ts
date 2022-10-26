@@ -30,6 +30,9 @@ import { UserUpdateComponent } from './components/user/user-update/user-update.c
 import { UserDeleteComponent } from './components/user/user-delete/user-delete.component';
 import { timeout } from 'rxjs';
 
+import { DataTablesModule } from "angular-datatables";
+import { DatatablesComponent } from './components/datatables/datatables.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +48,8 @@ import { timeout } from 'rxjs';
     UserCreateComponent,
     UserReadComponent,
     UserUpdateComponent,
-    UserDeleteComponent
+    UserDeleteComponent,
+    DatatablesComponent
   ],
   imports: [
     BrowserModule,
@@ -54,6 +58,7 @@ import { timeout } from 'rxjs';
     FormsModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
+    DataTablesModule,
   ],
   providers: [{
     provide: LOCALE_ID,
