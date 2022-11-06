@@ -39,6 +39,41 @@
       "name": "PC Game Mancer",
       "price": 4050,
       "id": 8
+    },
+    {
+      "id": 9,
+      "name": "caneta BIC branca",
+      "price": 5.89
+    },
+    {
+      "id": 10,
+      "name": "Notebook Mac Pro",
+      "price": 12000.89
+    },
+    {
+      "name": "monitor HQ",
+      "price": 419,
+      "id": 11
+    },
+    {
+      "name": "caixa de som",
+      "price": 69.99,
+      "id": 12
+    },
+    {
+      "name": "mouse",
+      "price": 49.5,
+      "id": 13
+    },
+    {
+      "name": "teclado mecanico",
+      "price": 150,
+      "id": 14
+    },
+    {
+      "name": "fone de ouvido",
+      "price": 45,
+      "id": 15
     }
   ],
   "users": [
@@ -53,6 +88,12 @@
       "email": "welliston10@gmail.com",
       "phone": null,
       "id": 2
+    },
+    {
+      "name": "guizera",
+      "email": "welliston10@gmail.com",
+      "phone": 234,
+      "id": 3
     }
   ]
 }
