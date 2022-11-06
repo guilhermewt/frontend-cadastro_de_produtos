@@ -11,7 +11,6 @@ import { UserCreateComponent } from './components/user/user-create/user-create.c
 import { UserReadComponent } from './components/user/user-read/user-read.component';
 import { UserUpdateComponent } from './components/user/user-update/user-update.component';
 import { UserDeleteComponent } from './components/user/user-delete/user-delete.component';
-import { DatatablesComponent } from './components/datatables/datatables.component';
 
 const routes:Routes = [
   {
@@ -53,10 +52,6 @@ const routes:Routes = [
   {
     path:'user-delete/:id',
     component:UserDeleteComponent
-  },
-  {
-    path:'datatables',
-    component:DatatablesComponent
   }
 ];
 

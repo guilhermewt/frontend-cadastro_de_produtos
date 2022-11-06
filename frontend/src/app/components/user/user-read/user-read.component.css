@@ -1,5 +1,6 @@
 table{
     background-color: rgba(0,0,0, 0.7);
+    color:white;
 }
 
 .page-header{
@@ -21,4 +22,20 @@ table{
 
 .red{
     color:red;
+}
+
+.dataTables_length > label{
+    color:orange;
+}
+
+#example_length > label{
+    color:orange;
+}
+
+#example_wrapper{
+    color:orange;
+}
+
+.dataTables_wrapper .dataTables_length {
+    color:orange;
 }

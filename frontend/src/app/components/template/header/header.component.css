@@ -3,7 +3,7 @@ nav{
 }
 
 nav.navbar-transparente{
-	background: rgba(0,0,0,0.3); /*transparencia*/
+	background: #0a1a24;
 	border: none;
 }
 

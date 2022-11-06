@@ -31,7 +31,6 @@ import { UserDeleteComponent } from './components/user/user-delete/user-delete.c
 import { timeout } from 'rxjs';
 
 import { DataTablesModule } from "angular-datatables";
-import { DatatablesComponent } from './components/datatables/datatables.component';
 
 @NgModule({
   declarations: [
@@ -48,8 +47,7 @@ import { DatatablesComponent } from './components/datatables/datatables.componen
     UserCreateComponent,
     UserReadComponent,
     UserUpdateComponent,
-    UserDeleteComponent,
-    DatatablesComponent
+    UserDeleteComponent
   ],
   imports: [
     BrowserModule,

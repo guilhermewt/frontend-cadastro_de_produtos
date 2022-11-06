@@ -15,17 +15,27 @@
 }
 
 .edit > a{
-    color:yellow
+    color:yellow;
 }
 
+.edit > a:hover{
+    color:white;
+}
 .remove > a{
-    color:red
+    color:red;
+}
+
+.remove > a:hover{
+    color:white;
 }
 
 table{
-    background-color: rgba(0,0,0, 0.7);
+    background: #0a1a24;
+    color:white;
 }
 
 h1{
     margin-top: 0px;
 }
+
+/*deletado o datatables configurado fundo branco, arrumado icones de deletar/editar ao passar o mouse,deletar user*/

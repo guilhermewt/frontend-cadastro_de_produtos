@@ -3,7 +3,7 @@
             <div class="page-header">
                 <h1>lista de user</h1>
             </div>
-            <table class="table table-bordered">
+            <table id="example" datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="table table-bordered row-border hover">
                 <thead>
                     <tr>
                         <th>id</th>
@@ -38,3 +38,8 @@
 
 </div>
 
+<h1>ola</h1>
+<button id="hide">hide</button>
+
+
+<button id="show">show</button>

@@ -7,13 +7,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 body{
-    background: url('assets/mountains.jpg');
-    color:#fff;
+    /* background: url('assets/mountains.jpg'); */
+    background-image: radial-gradient(circle at 50% -4.59%, #bdc3c7 0, #e7edf3 50%, #484e52 100%);
     background-attachment: fixed;
     background-color: #fff;
 }
 
 .input-transparent{
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #0a1a24;
     color:#fff;
 }

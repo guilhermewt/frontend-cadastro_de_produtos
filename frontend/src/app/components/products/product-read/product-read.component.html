@@ -3,7 +3,7 @@
         <div class="page-header">
             <h2>tabela de produtos</h2>
         </div>
-            <table class="table table-bordered">
+            <table id="tabela"datatable [dtOptions]= "dtOptions" [dtTrigger]="dtTrigger" class="table table-bordered row-border hover">
                 <thead>
                     <tr>
                         <th>id</th>
@@ -32,5 +32,7 @@
                     </tr>
                 </tbody>
             </table>
+
+            
     </div>
 </div>

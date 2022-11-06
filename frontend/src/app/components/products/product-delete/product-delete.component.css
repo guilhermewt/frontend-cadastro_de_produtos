@@ -7,6 +7,6 @@ button{
 }
 
 .form-control[readonly] {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #0a1a24;
     color:#fff;
 }
