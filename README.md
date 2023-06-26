@@ -1,7 +1,6 @@
 # Cadastro de Produtos
 
-Sistema de um CRUD onde um usuário faz o controler de produtos com as funçoẽs de adicionar, remover,atualizar produtos.
-O frontend foi contruído em Angular e para o backend o json-server para simular o armazenamento de dados.
+Este projeto consiste em um sistema CRUD de produtos desenvolvido em Angular. Ele se integra a uma API do JSON Server para realizar operações de criação, leitura, atualização e exclusão de produtos. O sistema permite aos usuários gerenciar sua lista de produtos de forma eficiente e interativa, utilizando a interface amigável fornecida pelo Angular e os recursos disponibilizados pela API do JSON Server.
 Para gerar as tabelas foi usado o angular datatables,para gerar mensagens o ngx-toastr.
 
 <img src="https://github.com/guilhermewt/assets/blob/main/project-angular/salva%20produtos%20project%20angular.png" style=" width:700px; height:700px;">
